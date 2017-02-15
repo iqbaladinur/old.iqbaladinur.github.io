@@ -1,0 +1,23 @@
+{
+  "name": "bower",
+  "description": "todolistapp",
+  "main": "index.html",
+  "keywords": [
+    "index"
+  ],
+  "authors": [
+    "iqbal adi nurmansyah"
+  ],
+  "license": "none",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-icons": "PolymerElements/iron-icons#^1.2.0"
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * c
+        -->
+        <link rel="manifest" href="manifest.json">
+        <link rel="icon" sizes="192x192" href="./img/icons.png">
+        <link rel="icon" sizes="128x128" href="./img/icons.png">
+        <link rel="apple-touch-icon" sizes="128x128" href="./img/icons.png">
+        <link rel="apple-touch-icon-precomposed" sizes="128x128" href="./img/icons.png">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+        <link rel='import' href='bower_components/polymer/polymer.html'/>
+        <link rel="import" href="bower_components/iron-meta/iron-meta.html">
+        <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+        <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html">
+        <link rel='import' href='bower_components/iron-icons/iron-icons.html'/>
+        <link rel='import' href='bower_components/paper-toolbar/paper-toolbar.html'/>
+        <link rel='import' href='bower_components/paper-button/paper-button.html'/>
+        <link rel='import' href='bower_components/paper-fab/paper-fab.html'/>
+        <link rel='import' href='bower_components/paper-listbox/paper-listbox.html'/>
+        <link rel='import' href='bower_components/paper-item/paper-item.html'/>
+        <link rel='import' href='bower_components/paper-checkbox/paper-checkbox.html'/>
+        <link rel='import' href='bower_components/paper-icon-button/paper-icon-button.html'/>
+        <link rel='import' href='bower_components/paper-input/paper-input.html'/>
+        <link rel='import' href='bower_components/paper-dialog/paper-dialog.html'/>
+        <link rel='import' href='bower_components/iron-icon/iron-icon.html'/>
+        <link rel="import" href="./tasks-list.html"/>
+        <title>To Do List</title>
+        <style is="custom-style" include="iron-flex iron-positioning iron-flex-factors"></style>
+        <style type="text/css">
+            .position-right{
+                width: 100%;
+            }
+            .pull-right{
+                position: relative;
+                float: right;
+            }
+        </style>
+    </head>
+    <body class="fullbleed layout vertical">
+        <tasks-list>
+            <!-- here the content-->
+        </tasks-list>
+    </body>
+</html>
