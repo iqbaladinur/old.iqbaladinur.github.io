@@ -1,0 +1,18 @@
+.home-background{
+
+}
+.img-round{
+	border-radius: 50%;
+	border: 1px solid rgba(181,181,181,0.5);
+}
+h1.title{
+	padding-top: 20px;
+}
+.frame{
+	border-top:20px solid #212121;
+	border-left:10px solid #212121;
+	border-right:10px solid #212121;
+	border-bottom:40px solid #212121;
+
+	border-radius: 10px;
+}
