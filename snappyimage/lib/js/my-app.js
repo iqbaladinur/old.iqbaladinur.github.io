@@ -29,6 +29,7 @@ var openFile = function(event) {
     reader.readAsDataURL(input.files[0]);
 };
 
+
 //draw image
 function draw(img){
     var vas = document.getElementById("effect");
