@@ -29,10 +29,6 @@ var openFile = function(event) {
     reader.readAsDataURL(input.files[0]);
 };
 
-if (screen.width>960) {
-    document.getElementById('background').src='https://www.landscapes.org/glf-2014/wp-content/uploads/sites/4/2014/11/Green-Gecko-%E2%80%93-Sabrina-van-de-Velde.jpg';
-};
-
 //draw image
 function draw(img){
     var vas = document.getElementById("effect");
