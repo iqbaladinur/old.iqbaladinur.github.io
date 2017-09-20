@@ -239,6 +239,7 @@ function filter(bobot, ctx, w, h, mix) {
 
 function onSaveImage() {
     FB.AppEvents.logEvent("Saved Image");
+    console.log('saved');
 };
 
 //=======================================transformation===========================
