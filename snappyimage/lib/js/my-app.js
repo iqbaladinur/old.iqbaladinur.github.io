@@ -346,6 +346,7 @@ myApp.onPageInit('mainapp', function (page) {
         linkdon.download=jam+menit+detik+"_"+bulan+hari+tahun+".png";
         linkdon.click();
         onSaveImage();
+        console.log("in");
         //window.open(fixurl,'_blank');
     }); 
 
