@@ -236,6 +236,11 @@ function filter(bobot, ctx, w, h, mix) {
 
     return dstData;
 };
+
+function onSaveImage() {
+    FB.AppEvents.logEvent("Saved Image");
+};
+
 //=======================================transformation===========================
 //horizontal mirror
 function horizontal_mirror(imgdata) {
@@ -339,6 +344,7 @@ myApp.onPageInit('mainapp', function (page) {
         linkdon.href=fixurl;
         linkdon.download=jam+menit+detik+"_"+bulan+hari+tahun+".png";
         linkdon.click();
+        onSaveImage();
         //window.open(fixurl,'_blank');
     }); 
 
@@ -802,7 +808,6 @@ $$('#info').on('click',function(){
     document.getElementById('resValue').innerHTML=img_prop.width+' x '+img_prop.height+' pixels';
     myApp.pickerModal('.picker-modal-detail');
 });
-
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
