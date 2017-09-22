@@ -16,3 +16,8 @@ h1.title{
 
 	border-radius: 10px;
 }
+.horizontal-frame{
+	border-top: 5px solid black;
+	background-color: #000000; 
+	border-radius: 10px;
+}
