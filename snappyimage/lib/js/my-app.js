@@ -23,8 +23,8 @@ var openFile = function(event) {
     var input = event.target;
     att=input.files[0];
     var reader = new FileReader();
-    reader.onload = function(){
-      imgurl=reader.result;
+    reader.onload = function(e){
+      imgurl = e.target.result;
     };
     reader.onloadend=function(){
       mainView.router.loadPage('editapp.html');   
@@ -309,31 +309,31 @@ myApp.onPageInit('mainapp', function (page) {
         var jam=String(d.getHours());
         var menit=String(d.getMinutes());
         var detik=String(d.getMilliseconds());
-    img_prop=document.getElementById('img');
+    var img_prop=document.getElementById('img');
     var fileinme=document.getElementById('input').files;
     var target=document.getElementsByClassName('filter');
     //loadpicture
     myApp.showIndicator();
-    setTimeout(function(){
-
+    setTimeout(function(){ 
         //display
          img_prop.src=imgurl;
          setTimeout(function(){
             draw(img_prop);
+            myApp.hideIndicator();
          },100);
          vascan=document.getElementById('effect');
-         myApp.hideIndicator();
-     },700);
+    },300);
 
-    //open from main menu
     $$('#input').on('change',function(event){
-        openFile(event);
         myApp.showIndicator();
+        openFile(event);
         setTimeout(function () {
-            myApp.hideIndicator();
             img_prop.src=imgurl;
-            draw(img_prop);
-        }, 800);
+            setTimeout(function () {
+                draw(img_prop);
+                myApp.hideIndicator();
+            }, 100);
+        }, 700);
     });
 
     //save button
