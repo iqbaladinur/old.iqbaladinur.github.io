@@ -330,10 +330,10 @@ myApp.onPageInit('mainapp', function (page) {
         setTimeout(function () {
             img_prop.src=imgurl;
             setTimeout(function () {
-                draw(img_prop);
+                draw(img_prop);         
                 myApp.hideIndicator();
             }, 100);
-        }, 7000);
+        }, 300);
     });
 
     //save button
