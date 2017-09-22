@@ -309,7 +309,7 @@ myApp.onPageInit('mainapp', function (page) {
         var jam=String(d.getHours());
         var menit=String(d.getMinutes());
         var detik=String(d.getMilliseconds());
-    var img_prop=document.getElementById('img');
+    img_prop=document.getElementById('img');
     var fileinme=document.getElementById('input').files;
     var target=document.getElementsByClassName('filter');
     //loadpicture
