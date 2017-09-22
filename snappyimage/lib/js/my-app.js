@@ -334,6 +334,8 @@ myApp.onPageInit('mainapp', function (page) {
                 myApp.hideIndicator();
             }, 100);
         }, 300);
+
+        FB.AppEvents.logEvent("open from main menu");
     });
 
     //save button
@@ -350,7 +352,6 @@ myApp.onPageInit('mainapp', function (page) {
         linkdon.download=jam+menit+detik+"_"+bulan+hari+tahun+".png";
         linkdon.click();
         onSaveImage();
-        console.log("in");
         //window.open(fixurl,'_blank');
     }); 
 
@@ -372,6 +373,7 @@ var actionSheetButtons = [
                         draw(img_prop);
                         myApp.hideIndicator();
                     }, 1000);
+                    FB.AppEvents.logEvent("using default filter");
                 }
             },
             // negative button
@@ -385,6 +387,7 @@ var actionSheetButtons = [
                     var imagej=invert(imagei);
                     puteffect(imagej);
                     }, 1300);
+                    FB.AppEvents.logEvent("using invert color");
                 }
                 //functionhere
             },
@@ -398,6 +401,7 @@ var actionSheetButtons = [
                         var imagej=blackandwhite(imagei);
                         puteffect(imagej);
                     }, 1300);
+                    FB.AppEvents.logEvent("using black and white");
                 }
             },
             {
@@ -410,6 +414,8 @@ var actionSheetButtons = [
                         var imagej=grayscale(imagei);
                         puteffect(imagej);
                     }, 1300);
+
+                    FB.AppEvents.logEvent("using grayscale");
                 }
             },
             {
@@ -430,6 +436,7 @@ var actionSheetButtons = [
                     var imagej=contrass(imagei);
                     puteffect(imagej);
                     }, 1300);
+                    FB.AppEvents.logEvent("using contras strech");
                    // myApp.pickerModal('.picker-modal-demo2');
                 }
             },
@@ -476,6 +483,7 @@ var actionSheetButtons2 = [
                         puteffect(imagej);
 
                     }, 1300);
+                    FB.AppEvents.logEvent("using emboss");
                 }
             },
             {
@@ -490,6 +498,7 @@ var actionSheetButtons2 = [
                         puteffect(imagej);
 
                     }, 1300);
+                    FB.AppEvents.logEvent("using sobel x");
                 }
             },
             {
@@ -504,6 +513,7 @@ var actionSheetButtons2 = [
                         puteffect(imagej);
 
                     }, 1300);
+                    FB.AppEvents.logEvent("using sobel y");
                 }
             },
             {
@@ -548,6 +558,7 @@ var actionSheetButtons2 = [
                         puteffect(imagej);
 
                     }, 1300);
+                    FB.AppEvents.logEvent("using green filter");
                 }
             },
             {
@@ -561,6 +572,7 @@ var actionSheetButtons2 = [
                         puteffect(imagej);
 
                     }, 1300);
+                    FB.AppEvents.logEvent("using purple filter");
                 }
             },
             {
@@ -574,6 +586,7 @@ var actionSheetButtons2 = [
                         puteffect(imagej);
 
                     }, 1300);
+                    FB.AppEvents.logEvent("using red filter");
                 }
             },
             {
@@ -587,6 +600,7 @@ var actionSheetButtons2 = [
                         puteffect(imagej);
 
                     }, 1300);
+                    FB.AppEvents.logEvent("using dark red filter");
                 }
             },
             {
@@ -600,6 +614,7 @@ var actionSheetButtons2 = [
                         puteffect(imagej);
 
                     }, 1300);
+                    FB.AppEvents.logEvent("using gray whiten filter");
                 }
             },
         ],
@@ -629,6 +644,7 @@ var actionSheetButtons2 = [
                     var imagej=horizontal_mirror(imagei);
                     puteffect(imagej);
                     }, 1300);
+                    FB.AppEvents.logEvent("using flip horizontal");
                 }
             },
             {
@@ -641,6 +657,7 @@ var actionSheetButtons2 = [
                     var imagej=vertical_mirror(imagei);
                     puteffect(imagej);
                     }, 1300);
+                    FB.AppEvents.logEvent("using flip vertical");
                 }
             }, 
             {
@@ -651,6 +668,7 @@ var actionSheetButtons2 = [
                     myApp.hideIndicator();
                     rotateleft(vascan,img_prop, 1);
                     }, 1300);
+                    FB.AppEvents.logEvent("using rotate left");
                 }
             }, 
             {
@@ -661,6 +679,7 @@ var actionSheetButtons2 = [
                     myApp.hideIndicator();
                     rotateright(vascan,img_prop, 1);
                     }, 1300);
+                    FB.AppEvents.logEvent("using rotate right");
                 }
             },   
         ],
@@ -696,7 +715,7 @@ $$('#alpha').on('touchend',function(){
        myApp.hideIndicator();
        puteffect(imagej);
        }, 800);
-       
+       FB.AppEvents.logEvent("using transparansi filter");
 });
 
 //brightness+
@@ -710,6 +729,7 @@ $$('#bright').on('touchend',function(){
        myApp.hideIndicator();
        puteffect(imagej);
        }, 800);
+       FB.AppEvents.logEvent("using brightten filter");
 });
 
 //brightness-
@@ -723,6 +743,7 @@ $$('#brightmin').on('touchend',function(){
        myApp.hideIndicator();
        puteffect(imagej);
        }, 800);
+       FB.AppEvents.logEvent("using darken filter");
 });
 //sharpen
 $$('#sharpen').on('touchend',function(){
@@ -734,6 +755,7 @@ $$('#sharpen').on('touchend',function(){
        myApp.hideIndicator();
        puteffect(imagej);
        }, 800);
+       FB.AppEvents.logEvent("using sharpen filter");
 });
 //blur
 $$('#blur').on('touchend',function(){
@@ -745,6 +767,7 @@ $$('#blur').on('touchend',function(){
        myApp.hideIndicator();
        puteffect(imagej);
        }, 800);
+       FB.AppEvents.logEvent("using blur filter");
 });
 //gaussian
 $$('#gaussian').on('touchend',function(){
@@ -756,6 +779,7 @@ $$('#gaussian').on('touchend',function(){
        myApp.hideIndicator();
        puteffect(imagej);
        }, 800);
+       FB.AppEvents.logEvent("using gaussian filter");
 });
 //edgedetect
 $$('#ed1').on('touchend',function(){
@@ -768,6 +792,7 @@ $$('#ed1').on('touchend',function(){
        myApp.hideIndicator();
        puteffect(imagej);
        }, 800);
+       FB.AppEvents.logEvent("using edgedetect1 filter");
 });
 $$('#ed2').on('touchend',function(){
        var mixval  = Number($$('#ed2').val())*0.1;
@@ -779,6 +804,7 @@ $$('#ed2').on('touchend',function(){
        myApp.hideIndicator();
        puteffect(imagej);
        }, 800);
+       FB.AppEvents.logEvent("using edgedetect2 filter");
 });
 $$('#ed3').on('touchend',function(){
        var mixval  = Number($$('#ed3').val())*0.1;
@@ -790,6 +816,7 @@ $$('#ed3').on('touchend',function(){
        myApp.hideIndicator();
        puteffect(imagej);
        }, 800);
+       FB.AppEvents.logEvent("using edgedetect3 filter");
 });
 //contrass
 $$('#contras').on('touchend',function(){
@@ -801,6 +828,7 @@ $$('#contras').on('touchend',function(){
        myApp.hideIndicator();
        puteffect(imagej);
        }, 800);
+       FB.AppEvents.logEvent("using contrass filter");
 });
 //=======================exit===================
 $$('#exit').on('click',function(){
