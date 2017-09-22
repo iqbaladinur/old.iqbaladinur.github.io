@@ -1,16 +1,19 @@
+//contructor
+var randomNumber = Math.floor(Math.random() * 3) + 1;
+
+document.getElementById("bg").className += " splash-"+randomNumber;
+
 // Initialize your app
 var myApp = new Framework7({ 
-    modalTitle: 'Framework7',
+    modalTitle: 'Caution',
     material:true,
-    // ... other parameters
 });
 
 // Export selectors engine
 var $$ = Dom7;
 
 // Add view
-var mainView = myApp.addView('.view-main', {
-});
+var mainView = myApp.addView('.view-main', {});
 //===========================global variable=============================================
 var imgurl;
 var att;
@@ -295,6 +298,7 @@ function rotateleft(canvas,img,degrees){
     };
     
 };
+
 //===================main page execute=============
 myApp.onPageInit('mainapp', function (page) {
     //variabel
@@ -679,6 +683,7 @@ myApp.onPageInit('help', function (page) {
         myApp.alert(':)','Tanks for Feedback!');
     });
 });
+
 
 //=======================effect button=====================
 //transparentsi
