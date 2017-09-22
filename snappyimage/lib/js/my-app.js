@@ -333,7 +333,7 @@ myApp.onPageInit('mainapp', function (page) {
                 draw(img_prop);
                 myApp.hideIndicator();
             }, 100);
-        }, 700);
+        }, 7000);
     });
 
     //save button
