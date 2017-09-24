@@ -17,3 +17,12 @@ h1.title{
 	border: 5px solid black;
 	border-radius: 10px;
 }
+.image-background{
+	background: url('http://p1.pichost.me/i/63/1872089.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.white{
+	color: white !important;
+}
