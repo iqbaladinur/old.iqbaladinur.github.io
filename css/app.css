@@ -3,7 +3,7 @@
 	border: 1px solid rgba(181,181,181,0.5);
 	width: 128px; 
 	height: 128px;
-	overflow: hidden;
+	object-fit: cover;
 }
 h1.title{
 	padding-top: 20px;
