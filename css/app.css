@@ -1,6 +1,9 @@
 .img-round{
 	border-radius: 50%;
 	border: 1px solid rgba(181,181,181,0.5);
+	width: 128px; 
+	height: 128px;
+	overflow: hidden;
 }
 h1.title{
 	padding-top: 20px;
