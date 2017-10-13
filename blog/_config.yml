@@ -39,8 +39,8 @@ urls:
     - text: XML Feed
       url: /feed.xml
 
-url: "https://iqbaladinur.github.io/blog"
-baseurl: "https://iqbaladinur.github.io/blog"
+url: ""
+baseurl: ""
 paginate: 20
 per_page: 20
 paginate_path: "/page/:num/"
