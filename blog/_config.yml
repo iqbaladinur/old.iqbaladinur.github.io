@@ -24,7 +24,7 @@ locale: en
 title_separator: "-"
 name: test
 description: test
-url: https://iqbaladinur.github.io/blog
+url: https://iqbaladinur.github.io
 baseurl: "/"
 repository: 
 teaser: 
