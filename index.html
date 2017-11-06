@@ -19,13 +19,12 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 </head>
 <body class="animated fadeIn">
-<section class="hero is-medium is-white">
+<section class="hero is-medium is-white is-fixed-top">
   <!-- Hero header: will stick at the top -->
   <div class="hero-head">
-    <header class="nav header is-fixed-top">
+    <header class="nav header">
       <div class="container">
         <div class="nav-left">
           <a class="nav-item">
@@ -43,9 +42,12 @@
 					</a>
 					<a href="#skill" class="nav-item">
             Skills Set
-          </a>
+					</a>
+					<a href="#project-done" class="nav-item">
+						Project Done
+					</a>
           <a href="#demo" class="nav-item">
-            Projects Demo 
+            Side Projects
 					</a>
 					<a href="#hire" class="nav-item">
 							Hire Me 
@@ -88,7 +90,7 @@
 				</p>
 			</article>
 		</div>
-	<h1 id="background" class="title has-text-left"><b>Educational Background</b></h1>
+	<h1 id="background" class="gap title has-text-left"><b>Educational Background</b></h1>
 	<hr>
 	<div class="tile is-ancestor " style="margin-bottom: 100px;">
 		<div class="tile is-vertical is-8">
@@ -135,13 +137,12 @@
 			</article>
 		</div>
 	</div>
-	<h1 id="skill" class="title has-text-left"><b>Skills Set</b></h1>
-	<hr>
-	<div style="margin-bottom:100px" class="box">
+	<h1 id="skill" class="gap title has-text-left"><b>Skills Set</b></h1>
+	<div style="margin-bottom:100px">
 	<div class="columns is-desktop">
 		<div class="column">
 			<h2 class="subtitle">
-				<span class="icon"><i class="fa fa-html5"></i></span> HTML
+				<span class="icon"><i class="fa fa-html5"></i></span> Html
 			</h2>
 			<div data-balloon="80%" data-balloon-pos="up">
 				<progress class="progress is-small is-primary" value="80" max="100">80%</progress>
@@ -149,21 +150,20 @@
 		</div>
 		<div class="column">
 			<h2 class="subtitle">
-				<span class="icon"><i class="fa fa-css3"></i></span> CSS
+				<span class="icon"><i class="fa fa-css3"></i></span> Css
 			</h2>
 			<div data-balloon="70%" data-balloon-pos="up">
-				<progress class="progress is-small is-success" value="70" max="100">70%</progress>
+				<progress class="progress is-small is-primary" value="70" max="100">70%</progress>
 			</div>
 		</div>
 	</div>
-	<hr>
 	<div class="columns is-desktop">
 		<div class="column">
 			<h2 class="subtitle">
-				<span class="icon"><i class="fa fa-codepen"></i></span> JAVASCRIPT
+				<span class="icon"><i class="fa fa-codepen"></i></span> Javascript
 			</h2>
 			<div data-balloon="60%" data-balloon-pos="up">
-				<progress class="progress is-small is-warning" value="60" max="100">60%</progress>
+				<progress class="progress is-small is-primary" value="60" max="100">60%</progress>
 			</div>
 		</div>
 		<div class="column">
@@ -171,66 +171,52 @@
 				<span class="icon"><i class="fa fa-pied-piper"></i></span> PHP
 			</h2>
 			<div data-balloon="80%" data-balloon-pos="up">
-				<progress class="progress is-small is-dark" value="80" max="100">80%</progress>
+				<progress class="progress is-small is-primary" value="80" max="100">80%</progress>
 			</div>
 		</div>
 	</div>
-	<hr>
 	<div class="columns is-desktop">
 		<div class="column">
 			<h2 class="subtitle">
-				<span class="icon"><i class="fa fa-codepen"></i></span> JQUERY
+				<span class="icon"><i class="fa fa-codepen"></i></span> Jquery
 			</h2>
 			<div data-balloon="70%" data-balloon-pos="up">
-				<progress class="progress is-small is-warning" value="70" max="100">70%</progress>
+				<progress class="progress is-small is-primary" value="70" max="100">70%</progress>
 			</div>
 		</div>
 		<div class="column">
 			<h2 class="subtitle">
-				<span class="icon"><i class="fa fa-html5"></i></span> BOOTSTRAP
+				<span class="icon"><i class="fa fa-html5"></i></span> Bootstrap
 			</h2>
 			<div data-balloon="90%" data-balloon-pos="up">
-				<progress class="progress is-small is-info" value="90" max="100">90%</progress>
+				<progress class="progress is-small is-primary" value="90" max="100">90%</progress>
 			</div>
 		</div>
 	</div>
-	<hr>
 	<div class="columns is-desktop">
 		<div class="column">
 			<h2 class="subtitle">
-				<span class="icon"><i class="fa fa-pied-piper"></i></span> CODEIGNITER
+				<span class="icon"><i class="fa fa-pied-piper"></i></span> Codeigniter
 			</h2>
 			<div data-balloon="85%" data-balloon-pos="up">
-				<progress class="progress is-small is-danger" value="85" max="100">85%</progress>
+				<progress class="progress is-small is-primary" value="85" max="100">85%</progress>
 			</div>
 		</div>
 		<div class="column">
 			<h2 class="subtitle">
-				<span class="icon"><i class="fa fa-database"></i></span> MYSQL
+				<span class="icon"><i class="fa fa-database"></i></span> MYSql
 			</h2>
 			<div data-balloon="80%" data-balloon-pos="up">
-				<progress class="progress is-small is-disabled" value="80" max="100">80%</progress>
+				<progress class="progress is-small is-primary" value="80" max="100">80%</progress>
 			</div>
 		</div>
 	</div>
-	<hr>
 	</div>
 	</div>
-</section>
-<div id="hire" style="margin-bottom:20px"></div>
-<section style="margin-bottom: 100px" class="hero is-medium is-primary is-bold has-text-centered section">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        need a help to work on your project?
-      </h1>
-      <a href="mailto:iqbaladinur@gmail.com?Subject=JOB%20OFFER" target="_top" class="button is-primary">Hire Me!</a>
-    </div>
-  </div>
 </section>
 <section class="section">
 	<div class="container">
-		<h1 id="demo" class="title has-text-left"><b>Projects Demo</b></h1>
+		<h1 id="demo" class="gap title has-text-left"><b>Side Projects </b></h1>
 		<hr>
 	</div>
 </section>
@@ -304,6 +290,46 @@
 	</a>
 </div>
 </section>
+<section class="section">
+	<!-- project done -->
+	<div class="container">
+		<h1 id="project-done" class="gap title has-text-left">
+			<b>Projects Done </b>
+		</h1>
+		<hr>
+		<div class="columns">
+			<div class="column image-background project">
+				<div class="overlay">
+					http://voting.uin-suka.ac.id
+				</div>
+				<h2 class="title is-4">
+					E-VOTING
+					<br> UIN Sunan Kalijaga
+				</h2>
+			</div>
+			<div class="column image-background project">
+				<div class="overlay">
+					http://akademik.nurulummah.ponpes.id
+				</div>
+				<h2 class="title is-4">
+					SIA Madrasah Diniyah
+					<br> Nurul Ummah Kotagede, Yogyakarta
+				</h2>
+			</div>
+		</div>
+	</div>
+</section>
+<div id="hire" style="margin-bottom:20px"></div>
+<section style="margin-bottom: 100px" class="hero is-medium is-primary is-bold has-text-centered section">
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title">
+				need a help to work on your project?
+			</h1>
+			<a href="mailto:iqbaladinur@gmail.com?Subject=JOB%20OFFER" target="_top" class="button is-primary">Hire Me!</a>
+		</div>
+	</div>
+</section>
 <footer class="footer" id="contact">
   <div class="container">
     <div class="content has-text-centered">
@@ -341,6 +367,13 @@
 		$(this).toggleClass('is-active');
 		$('#nav-menu').toggleClass('is-active');
 	});
+
+	$('.nav-item').click(function () {
+		$('.nav-item').removeClass("is-active");
+		$(this).addClass('is-active');
+	});
+
+	$(".project")
 </script>
 </body>
 </html>
