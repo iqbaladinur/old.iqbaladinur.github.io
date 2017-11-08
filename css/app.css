@@ -73,3 +73,7 @@ h1.title{
 .project .overlay:hover{
 	opacity: 1;
 }
+
+.overlay a:hover{
+	color: white;
+}
