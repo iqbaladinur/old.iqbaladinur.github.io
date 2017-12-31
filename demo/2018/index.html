@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy New Year Enjoy Your Holiday</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="shortcut icon" type="image/png" href="./static/explosion.png"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="rgb(10, 24, 32)">
+</head>
+<body>
+    <div id="parent" class="parent is-hidden" >
+        <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+        <div class="child">
+            <div class="level">
+                <div class="level-item" style="margin-top:200px">
+                    <h1 class="hp title has-text-centered">Happy New Years 2018</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="section" class="hero is-dark is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns level">
+                    <div class="column level-item">
+                         happy new years friends,
+                        <h1 class="title" id="title_here"></h1>
+                        <h2 class="is-size-4" id="subtitle_here"></h2>
+                    </div>
+                    <div class="column has-text-right">
+                        <div id="wht" class="is-hidden">
+                            <h1 class="title is-size-4">what i have done in 2017</h1>
+                            <ul type="none">
+                                <li>1. pass the 6, short and 7 semester with happy</li>
+                                <li>2. complete the practical work</li>
+                                <li>3. proposal seminar</li>
+                                <li>4. make new friends while 'KKN'</li>
+                                <li>5. get my first project as freelance programmer</li>
+                                <li>6. get my first onsite project as programmer</li>
+                                <li>7. join indonesia android kejar as facilitator</li>
+                                <li>8. get a job as frontend</li>
+                                <li>9. i will graduate in 8 semester :)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./static/fireworks.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
+</body>
+</html>
+<script>
+    var title = document.getElementById("title_here");
+    var sub = document.getElementById("subtitle_here");
+    var titleString = new Typewriter(title, {
+        loop:false,
+        cursor:''
+    });
+    var subtitleString = new Typewriter(sub, {
+        loop: false,
+        cursor:''
+    });
+    titleString.typeString("2017 is done,")
+        .pauseFor(1000)
+        .typeString(' do not regret it.')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString("let's make some new year's resolution")
+        .start();
+    setTimeout(function () {
+        subtitleString.typeString("hemmmmm..")
+            .pauseFor(1000)
+            .deleteAll()
+            .typeString('i will not make it.')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString("lets just do something in 2018 !")
+            .start();
+        setTimeout(function () {
+            document.getElementById("wht").classList.remove("is-hidden");
+            document.getElementById("wht").classList.add("animated");
+            document.getElementById("wht").classList.add("fadeInRight");
+            setTimeout(function () {
+                document.getElementById("section").classList.add("animated");
+                document.getElementById("section").classList.add("fadeOut");
+                document.getElementById("section").classList.add("is-hidden");
+                
+                document.getElementById("parent").classList.remove("is-hidden");
+                document.getElementById("parent").classList.remove("animated");
+                document.getElementById("parent").classList.remove("fadeIn");
+            }, 5000);
+        },17000);
+    },18000);
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poiret+One');
+    body{
+        font-family: 'Poiret One', sans-serif;
+        background: rgb(10, 24, 32);
+	    margin: 0;
+    }
+    canvas {
+        cursor: crosshair;
+        display: block;
+    }
+    .container{
+        color: rgb(38, 255, 92) !important;
+    }
+    .parent{
+        position: relative;
+    }
+    .child{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .is-transparent{
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .hp{
+        color: white;
+    }
+</style>
